@@ -8,7 +8,7 @@ Therefore this version is a bit stripped down, i went with just good-old arrays
 and switched to floats  to speed it up, as well as just avoiding as much overhead as possible.
 
 The things that have been added that are not in "Neural Network" are:
- - A convoluitonal layer that does zero-padding by default, so it preserves spatial size unless padding > 1 is used
+ - A convoluitonal layer that does zero-padding by default, so it preserves spatial size unless stride > 1 is used
  - Max pooling layer that does a filter size 2, stride 2 max pool, to just downsample by half
  
 The current setup managed to classify just over 70% correctly on the entire validation set after having trained for 10 epochs.
