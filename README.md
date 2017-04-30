@@ -11,4 +11,4 @@ The things that have been added that are not in "Neural Network" are:
  - A convoluitonal layer that does zero-padding by default, so it preserves spatial size unless stride > 1 is used
  - Max pooling layer that does a filter size 2, stride 2 max pool, to just downsample by half
  
-The current setup managed to classify just over 70% correctly on the entire validation set after having trained for 10 epochs.
+The current setup managed to classify just over 70% correctly on the entire validation set after having trained for 10 epochs. 10 epochs still took almost 2 hours, so it's still pretty slow. I'm currently looking into CUDA as a means of speeding it up further, I probably won't do much more with this project until i can speed things up properly in gpu.
